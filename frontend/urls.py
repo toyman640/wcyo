@@ -4,5 +4,5 @@ from frontend import views
 app_name = 'frontend'
 
 urlpatterns = [
-    path('', views.about, name='about')
+    path('about-us', views.about, name='about'),
 ]

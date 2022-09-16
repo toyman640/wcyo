@@ -8,4 +8,5 @@ def index(request):
     return render(request, 'frontend/index.html')
 
 def about(request):
-    pass
+    
+    return render(request, 'frontend/about.html')
