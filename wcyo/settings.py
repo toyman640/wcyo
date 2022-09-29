@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'import_export',
     'frontend',
 ]
 
@@ -83,14 +84,18 @@ WSGI_APPLICATION = 'wcyo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'polit',
+        'NAME': 'records',
         'HOST': 'localhost',
         'USER': 'root',
         'PASSWORD': '',
-        'PORT': '3306'
+        'PORT': '3306',
+        'OPTIONS' : {
+            'init_command' : "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
         
     }
 }
+
 
 
 # Password validation

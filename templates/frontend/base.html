@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="{% static 'css/templatemo-woox-travel.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.css' %}">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
-    <link rel="stylesheet"href="{% static 'https://unpkg.com/swiper@7/swiper-bundle.min.css' %}"/>
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+		integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous">
 <!--
 
 TemplateMo 580 Woox Travel
@@ -56,7 +58,7 @@ https://templatemo.com/tm-580-woox-travel
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="{% static 'images/logo.png" alt="">
+                        <img src="{% static 'images/logo.png' %}" alt="">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
@@ -64,7 +66,7 @@ https://templatemo.com/tm-580-woox-travel
                         <li><a href="{% url 'index' %}" class="active">Home</a></li>
                         <li><a href="{% url 'frontend:about' %}">About</a></li>
                         <li><a href="deals.html">Deals</a></li>
-                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="{% url 'frontend:contact' %}">Contact Us</a></li>
                         <li><a href="reservation.html">Book Yours</a></li>
                     </ul>   
                     <a class='menu-trigger'>
@@ -104,6 +106,16 @@ https://templatemo.com/tm-580-woox-travel
   <script src="{% static 'js/tabs.js' %}"></script>
   <script src="{% static 'js/popup.js' %}"></script>
   <script src="{% static 'js/custom.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<script src="{% static 'js/lga.min.js' %}"></script>
 
   <script>
     function bannerSwitcher() {
